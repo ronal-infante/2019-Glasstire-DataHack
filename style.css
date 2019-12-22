@@ -1,0 +1,469 @@
+
+/*
+style.css
+
+Glasstire Data Hack
+Author: Ronal Infante 
+Author URI: http://ronalinfante.com
+
+
+Hi fellow developers! Give me some love:
+https://www.instagram.com/ron.infante/
+
+
+*
+* Contents:
+*
+* 1.0 - Fonts
+* 2.0 - Reset
+* 3.0 - Mobile
+* 4.0 - Tablet
+* 5.0 - Desktop
+* 
+*/
+
+/*	1.0 - Fonts 
+*/
+
+
+
+
+/*	2.0 - Reset 
+*/
+
+html, body, div, span, object, iframe, header, footer, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, section, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  font-style:  inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  max-width: 100%;
+}
+
+html {
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust:     100%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Milo', 'Helvetica', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+body {
+  background: #FFFFFF;
+}
+
+section{ 
+  overflow: hidden;
+  padding: 3.375em 0; 
+}
+
+a {
+  color: #c8102e;
+  text-decoration: none;
+  -webkit-transition: color .25s ease;
+  -o-transition:      color .25s ease;
+  -moz-transition:    color .25s ease;
+  transition:         color .25s ease;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+  color: #960C22;
+}
+
+a:active, a:hover {
+  text-decoration: none;
+  padding-bottom: 0.15em;
+  margin-bottom: 0;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 { 
+  color: inherit;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 { 
+  font-family: 'LeagueGothic', sans-serif;
+}
+
+h5, .h5,
+h6, .h6{
+  font-family: 'Milo', sans-serif;
+}
+
+h1, .h1 { 
+  font-size: 4.5rem;
+  margin: 1.125rem 0;
+  text-transform: uppercase; 
+}
+h2, .h2 {
+  font-size: 3.375rem;
+  margin: 1.125rem 0;
+  text-transform: uppercase;
+}
+h3, .h3 { font-size: 2.25rem; }
+h4, .h4 { font-size: 1.625em; }
+h5, .h5 { 
+  font-size: 1.25em; 
+  text-transform: uppercase; 
+}
+h6, .h6 { 
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+address {
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted #2B2B2B;
+  cursor: help;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+cite,
+dfn,
+em,
+i {
+  font-style: italic;
+}
+
+mark,
+ins {
+  background: #FFF9C0;
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+  font-family: monospace, serif;
+  font-size: 15px;
+  -webkit-hyphens: none;
+  -moz-hyphens:    none;
+  -ms-hyphens:     none;
+  hyphens:         none;
+  line-height: 1.6;
+}
+
+pre {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+  margin-bottom: 24px;
+  max-width: 100%;
+  overflow: auto;
+  padding: 12px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+blockquote, 
+q {
+  -webkit-hyphens: none;
+  -moz-hyphens:    none;
+  -ms-hyphens:     none;
+  hyphens:         none;
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+blockquote {
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 24px;
+}
+
+blockquote cite,
+blockquote small {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+blockquote em,
+blockquote i,
+blockquote cite {
+  font-style: normal;
+}
+
+blockquote strong,
+blockquote b {
+  font-weight: 700;
+}
+
+small {
+  font-size: smaller;
+}
+
+big {
+  font-size: 125%;
+}
+
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  bottom: 1ex;
+}
+
+sub {
+  top: .5ex;
+}
+
+dl {
+  margin-bottom: 24px;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-bottom: 24px;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0 0 24px 1em;
+}
+
+ul {
+  list-style: square;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin: 0 0 0 0.75em;
+}
+
+li {
+  margin: 0 0 0.5em;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+}
+
+figure {
+  margin: 0;
+}
+
+iframe{ width: 100%; }
+
+fieldset {
+  border: 2px solid #000;
+  margin: 0 0 24px;
+  padding: 1em 1em 0.75em;
+}
+
+legend {
+  white-space: normal;
+  padding: 0 0.5em;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+button,
+input,
+select,
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+  font-size: initial;
+  margin: 0;
+  max-width: 100%;
+  vertical-align: baseline;
+
+}
+
+button,
+input {
+  line-height: 1.14;
+}
+
+input,
+textarea {
+  background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0)); 
+  /* removing the inner shadow, rounded corners on iOS inputs */
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+input[disabled],
+textarea[disabled],
+.disabled{
+  cursor: default;
+  background: rgb(235, 235, 228) !important;
+  color: #A9A9A9 !important;
+}
+.disabled:hover{ color: #A9A9A9 !important; }
+.disabled:hover span{ margin-right: 0 !important; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+  cursor: pointer;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table,
+th,
+td {
+  border: 1px solid #e5e5e5;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+table {
+  margin: 1em 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 1px 0 0 1px; 
+}
+
+caption,
+th,
+td {
+  font-weight: 400;
+  text-align: left;
+}
+
+th {
+  border-width: 0 1px 1px 0;
+  font-weight: 700;
+}
+
+td {
+  border-width: 0 1px 1px 0;
+}
+
+del {
+  color: #767676;
+}
+
+hr {
+  background: #e5e5e5;
+  background: rgba(0, 0, 0, 0.1);
+  border: 0;
+  height: 1px;
+  margin: 1.5em 0;
+}
