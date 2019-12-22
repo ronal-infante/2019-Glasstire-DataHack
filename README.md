@@ -1,4 +1,6 @@
-## 2019 Glasstire DataHack
+ ![](https://github.com/ronal-infante/2019-Glasstire-DataHack//blob/master/datahack.png)
+
+ ## 2019 Glasstire DataHack
 
 The Glasstire Datahack is a two-day event where artists and data scientists unite to analyze and draw findings from a data set of art venues throughout the Greater Houston Area.
 
